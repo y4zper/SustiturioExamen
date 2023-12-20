@@ -13,10 +13,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/susti-daw",
+            "outputPath": "dist/app-forms-bootstrap",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": [
+            "polyfills": [  
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
@@ -25,9 +25,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css", 
+              "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -94,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "cd380aa0-54de-4154-b381-9740b12306b2"
   }
 }

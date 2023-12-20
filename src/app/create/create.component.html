@@ -1,0 +1,51 @@
+<div class="col-md-6 offset-md-3">
+
+<h3 class="text-center">Añadir Docente</h3>
+
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label>Nombre</label>
+            <input type = "text" class="form-control" id="nombre"
+            [(ngModel)]="docente.nombre"
+            name="nombre">
+        </div>
+        <div class="form-group">
+            <label>DNI</label>
+            <input type = "text" class="form-control" id="dni"
+            [(ngModel)]="docente.dni"
+            name="dni">
+        </div>
+        <div class="form-group">
+            <label>FechaNacimiento</label>
+            <input type = "text" class="form-control" id="fechanacimiento"
+            [(ngModel)]="docente.fechanacimiento"
+            name="fechanacimiento">
+        </div>
+        <div class="form-group">
+            <label>Sueldo</label>
+            <input type = "text" class="form-control" id="sueldo"
+            [(ngModel)]="docente.sueldo"
+            name="sueldo">
+        </div>
+        <div class="form-group">
+            <label>E-mail</label>
+            <input type = "text" class="form-control" id="email"
+            [(ngModel)]="docente.email"
+            name="email">
+        </div>
+        <div class="form-group">
+            <label>Sexo</label>
+            <input type = "text" class="form-control" id="sexo"
+            [(ngModel)]="docente.sexo"
+            name="sexo">
+        </div>
+        <div class="form-group">
+            <label>CategoriaID</label>
+            <input type = "text" class="form-control" id="idcategoria"
+            [(ngModel)]="docente.idcategoria"
+            name="idcategoria">
+        </div> 
+        <button class="btn btn-success">Guardar</button>
+    </form>
+    
+</div>

@@ -1,0 +1,31 @@
+
+<h2> Listar Docentes</h2>
+
+<table class="table table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th>Nombre</th>
+        <th>DNI</th>
+        <th>FechaNacimiento</th>
+        <th>Sueldo</th>
+        <th>Email</th>
+        <th>Sexo</th>
+        <th>idCategoria</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let docente of listaDocente">
+          <td>{{docente.nombre}}</td>
+          <td>{{docente.dni}}</td>
+          <td>{{docente.fechanacimiento}}</td>
+          <td>{{docente.sueldo}}</td>
+          <td>{{docente.email}}</td>
+          <td>{{docente.sexo}}</td>
+          <td>{{docente.idcategoria}}</td>
+          <td>
+            <button (click)="actualizarDocente(docente.iddocente)" class="btn btn-info" >Actualizar</button>
+            <button (click)="eliminarDocente(docente.iddocente)" class="btn btn-info" style="margin-left: 12px;">Eliminar</button>
+          </td>
+        </tr>      
+      </tbody>
+  </table>
